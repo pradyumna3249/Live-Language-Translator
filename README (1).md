@@ -1,13 +1,12 @@
-# 🚀 TalkBridge  
+# TalkBridge  
 ## Real-Time Speech-to-Text & Multilingual Translation System
 
 TalkBridge is a **real-time, low-latency speech intelligence system** that captures live microphone audio, converts speech into text using **Whisper / Faster-Whisper**, translates English speech into **Hindi and Telugu**, and optionally generates **Text-to-Speech (TTS)** output.
 
 The project demonstrates **end-to-end speech pipeline engineering**, combining **streaming audio processing**, **deep learning–based speech recognition**, **multilingual NLP**, **dataset engineering**, and **tokenizer training**.
 
----
 
-## 🌟 Why TalkBridge?
+## Why TalkBridge?
 
 - Real-time streaming (not batch processing)  
 - Multilingual support (EN → HI, EN → TE)  
@@ -15,34 +14,32 @@ The project demonstrates **end-to-end speech pipeline engineering**, combining *
 - Production-style architecture  
 - Dataset & tokenizer pipeline included  
 
----
 
-## 🧠 Core Capabilities
+## Core Capabilities
 
-### 🎙 Speech Recognition
+### Speech Recognition
 - Real-time microphone streaming
 - Chunk-wise transcription for low latency
 - Whisper / Faster-Whisper based STT
 - Supports tiny, small, and medium models
 
-### 🌐 Multilingual Translation
+### Multilingual Translation
 - English speech → Hindi text
 - English speech → Telugu text
 - Translation logging for dataset generation
 
-### 🔊 Text-to-Speech (TTS)
+### Text-to-Speech (TTS)
 - Optional Hindi & Telugu speech output
 - Supports gTTS / Piper-based pipelines
 
-### 📊 Dataset & NLP Engineering
+### Dataset & NLP Engineering
 - Cleaning and normalization of multilingual corpora
 - EN–HI and EN–TE dataset merging
 - Train / Validation / Test splitting
 - SentencePiece BPE tokenizer training
 
----
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 Microphone Audio
@@ -58,9 +55,8 @@ Multilingual Translation (EN → HI / TE)
 Logs & Dataset Storage
 ```
 
----
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -89,7 +85,7 @@ Logs & Dataset Storage
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Tools / Libraries |
 |-------|------------------|
@@ -103,7 +99,7 @@ Logs & Dataset Storage
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 python -m venv venv
@@ -114,7 +110,7 @@ pip install numpy sounddevice faster-whisper transformers sentencepiece gtts hug
 
 ---
 
-## ▶️ Running the System
+## Running the System
 
 ```bash
 python stt_stream_tiny_auto.py
@@ -131,7 +127,7 @@ speech_translations.txt
 
 ---
 
-## 📊 Dataset & Tokenizer Pipeline
+## Dataset & Tokenizer Pipeline
 
 ```bash
 python merge_all.py
@@ -145,7 +141,7 @@ Language tokens:
 
 ---
 
-## 🧪 Sample Output
+## Sample Output
 
 ```
 English : hello world
@@ -155,13 +151,13 @@ Telugu  : హలో వరల్డ్
 
 ---
 
-## 👨‍💻 Contributor
+## Contributor
 
 **Pradyumna Kumar**  
 Speech processing, real-time streaming, translation pipeline, dataset & tokenizer engineering.
 
 ---
 
-## 📄 License
+## License
 
 Academic and research use.
